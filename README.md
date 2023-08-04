@@ -16,4 +16,4 @@ The theme does not take up the entire page once the synopsis of the show is rend
 Currently the random button is not working fully and only gives you a random anime from a list of like seven shows
 
 
-The app was built using REACT,css,Redux,Javascript.
+The app was built using HTML,CSS,REACT,Redux,Javascript.
