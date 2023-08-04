@@ -1,5 +1,5 @@
 const AnimeList = ({ myAnimeList,setMyAnimeList }) => {
-
+  /// Function to handle watched or not watched
     const handleWatchedToggle = (animeId) => {
      
       const updatedList = myAnimeList.map((anime) =>
@@ -8,7 +8,7 @@ const AnimeList = ({ myAnimeList,setMyAnimeList }) => {
    
       setMyAnimeList(updatedList);
     };
-  
+ /// Function to handle delete from list
     const handleDelete = (animeId) => {
       
       const updatedList = myAnimeList.filter((anime) => anime.id !== animeId);
@@ -20,7 +20,7 @@ const AnimeList = ({ myAnimeList,setMyAnimeList }) => {
       <div>
         <h2>My Anime List</h2>
         {myAnimeList.length > 0 ? (
-          <ul>
+          <ul className="list-container">
             {myAnimeList.map((anime) => (
               <li key={anime.id}>
                 <span style={{ textDecoration: anime.watched ? 'line-through' : 'none' }}>

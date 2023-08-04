@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import AnimeList from './components/AnimeList';
-import './App.css';
+import './Styles.css';
 
 function App() {
   const themeColor = useSelector((state) => state.theme.value);
@@ -18,7 +18,7 @@ function App() {
   const handleSearchResult = (results) => {
     setSearchResults(results);
   };
-
+// Add Anime to List When button is pressed
   const handleAddToList = (anime) => {
     setMyAnimeList((prevList) => [...prevList, anime]);
   };
@@ -34,10 +34,7 @@ function App() {
   // Save anime list to local storage whenever it changes
   useEffect(() => {
     localStorage.setItem('myAnimeList', JSON.stringify(myAnimeList));
-    console.log('Saved to local storage:', myAnimeList); // Log the anime list whenever it's saved
   }, [myAnimeList]);
-
-  console.log('Current anime list:', myAnimeList); // Log the current anime list whenever it changes
 
   return (
     <Router>

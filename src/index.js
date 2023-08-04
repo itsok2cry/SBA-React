@@ -4,7 +4,7 @@ import App from './App';
 import { configureStore } from '@reduxjs/toolkit';
 import themeReducer from './features/theme'
 import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
+
 
 const store = configureStore({
   reducer: {

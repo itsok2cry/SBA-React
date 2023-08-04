@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"; 
 
-const setLightMode = { color: "black", backgroundImage: "url('/images/_5_Centimeters_Per_Second-image.jpg')", backgroundRepeat: 'no-repeat', backgroundSize: 'cover', };
-const setDarkMode = { color: "red", backgroundImage: "url('/images/AnimeSky.jpg')", backgroundRepeat: 'no-repeat', backgroundSize: 'cover', };
+const setLightMode = { color: "black", backgroundImage: "url('/images/_5_Centimeters_Per_Second-image.jpg')", backgroundSize: 'cover' };
+const setDarkMode = { color: "silver", backgroundImage: "url('/images/AnimeSky.jpg')", backgroundSize: 'cover' };
 
 export const themeSlice = createSlice({
   name: "theme",

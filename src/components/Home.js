@@ -8,7 +8,8 @@ const Home = ({ handleSearchResult, searchResults, handleAddToList, myAnimeList 
 
   return (
     <>
-      <h1>Anime Search</h1>
+      <h1>Search, List, Anime!</h1>
+      <h6>Search for an anime below or press random button for a random anime:</h6>
       <Form onSearchResult={handleSearchResult} onAddToList={handleAddToList} />
       <AnimeSearch results={searchResults} onAddToList={handleAddToList}  myAnimeList={myAnimeList} />
     </>
